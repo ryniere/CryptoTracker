@@ -6,9 +6,9 @@ target 'CryptoTracker' do
   use_frameworks!
 
   # Pods for CryptoTracker
-
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  
+  pod 'ReactiveSwift', '~> 3.0'
+  pod 'ReactiveCocoa', '~> 7.0'
 
   target 'CryptoTrackerTests' do
     inherit! :search_paths

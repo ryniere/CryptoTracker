@@ -16,6 +16,8 @@
 		412BB3E2201BA19900870B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412BB3E0201BA19900870B24 /* LaunchScreen.storyboard */; };
 		412BB3ED201BA19900870B24 /* CryptoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB3EC201BA19900870B24 /* CryptoTrackerTests.swift */; };
 		412BB3F8201BA19900870B24 /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB3F7201BA19900870B24 /* CryptoTrackerUITests.swift */; };
+		412BB408201BA64A00870B24 /* CryptoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB407201BA64A00870B24 /* CryptoAPI.swift */; };
+		412BB40A201BA70000870B24 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB409201BA70000870B24 /* Ticker.swift */; };
 		6F5C466F74C7185A15C6D84A /* Pods_CryptoTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC32675290A1F0302FFA7767 /* Pods_CryptoTrackerUITests.framework */; };
 		91539507C10A6C78FA0EF23A /* Pods_CryptoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7E28C99BD038764F84C52 /* Pods_CryptoTracker.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +58,8 @@
 		412BB3F3201BA19900870B24 /* CryptoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412BB3F7201BA19900870B24 /* CryptoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITests.swift; sourceTree = "<group>"; };
 		412BB3F9201BA19900870B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		412BB407201BA64A00870B24 /* CryptoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPI.swift; sourceTree = "<group>"; };
+		412BB409201BA70000870B24 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		56B7E28C99BD038764F84C52 /* Pods_CryptoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C882EF38768FBEFEAB3647C /* Pods-CryptoTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrackerUITests/Pods-CryptoTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF67060A37197470173554E /* Pods-CryptoTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrackerUITests/Pods-CryptoTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +133,8 @@
 		412BB3D3201BA19800870B24 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				412BB406201BA60000870B24 /* Models */,
+				412BB405201BA5D200870B24 /* WebServices */,
 				412BB3D4201BA19800870B24 /* AppDelegate.swift */,
 				412BB3D6201BA19800870B24 /* ViewController.swift */,
 				412BB3D8201BA19900870B24 /* Main.storyboard */,
@@ -156,6 +162,22 @@
 				412BB3F9201BA19900870B24 /* Info.plist */,
 			);
 			path = CryptoTrackerUITests;
+			sourceTree = "<group>";
+		};
+		412BB405201BA5D200870B24 /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				412BB407201BA64A00870B24 /* CryptoAPI.swift */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		412BB406201BA60000870B24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412BB409201BA70000870B24 /* Ticker.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A7C7DD66C1996C649125F461 /* Frameworks */ = {
@@ -362,13 +384,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -464,6 +488,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				412BB3D7201BA19800870B24 /* ViewController.swift in Sources */,
+				412BB408201BA64A00870B24 /* CryptoAPI.swift in Sources */,
+				412BB40A201BA70000870B24 /* Ticker.swift in Sources */,
 				412BB3DD201BA19900870B24 /* CryptoTracker.xcdatamodeld in Sources */,
 				412BB3D5201BA19800870B24 /* AppDelegate.swift in Sources */,
 			);
