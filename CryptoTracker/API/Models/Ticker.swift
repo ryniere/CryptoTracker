@@ -8,24 +8,28 @@
 
 import UIKit
 
-class Ticker: Codable {
+public struct Ticker: Codable {
 
 	var id = ""
 	var name = ""
 	var symbol = ""
-	var rank = 0
-	var priceUSD = 0
-	var priceBTC = 0
-	var volume24hUSD = 0
-	var marketCapUSD = 0
-	var availableSupply = 0
-	var totalSupply = 0
-	var percentChange1h = 0
-	var percentChange24h = 0
-	var percentChange7d = 0
-	var lastUpdated = 0
+	var rank = ""
+	var priceUSD = ""
+	var priceBTC = ""
+	var volume24hUSD = ""
+	var marketCapUSD = ""
+	var availableSupply = ""
+	var totalSupply = ""
+	var percentChange1h = ""
+	var percentChange24h = ""
+	var percentChange7d = ""
+	var lastUpdated = ""
 	
 	enum CodingKeys : String, CodingKey {
+		case id
+		case name
+		case symbol
+		case rank
 		case priceUSD = "price_usd"
 		case priceBTC = "price_btc"
 		case volume24hUSD = "24h_volume_usd"

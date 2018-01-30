@@ -9,6 +9,7 @@ target 'CryptoTracker' do
   
   pod 'ReactiveSwift', '~> 3.0'
   pod 'ReactiveCocoa', '~> 7.0'
+  pod 'Alamofire', '~> 4.6'
 
   target 'CryptoTrackerTests' do
     inherit! :search_paths

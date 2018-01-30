@@ -16,8 +16,21 @@
 		412BB3E2201BA19900870B24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 412BB3E0201BA19900870B24 /* LaunchScreen.storyboard */; };
 		412BB3ED201BA19900870B24 /* CryptoTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB3EC201BA19900870B24 /* CryptoTrackerTests.swift */; };
 		412BB3F8201BA19900870B24 /* CryptoTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB3F7201BA19900870B24 /* CryptoTrackerUITests.swift */; };
-		412BB408201BA64A00870B24 /* CryptoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB407201BA64A00870B24 /* CryptoAPI.swift */; };
 		412BB40A201BA70000870B24 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412BB409201BA70000870B24 /* Ticker.swift */; };
+		41DE43002020B63900145E58 /* CoinMarketCapAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE42FF2020B63900145E58 /* CoinMarketCapAPI.swift */; };
+		41DE43032020B8D200145E58 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE43022020B8D200145E58 /* Route.swift */; };
+		41DE43052020B90B00145E58 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE43042020B90B00145E58 /* Method.swift */; };
+		41DE43082020B9D100145E58 /* ErrorEnvelope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE43072020B9D100145E58 /* ErrorEnvelope.swift */; };
+		41DE43112021099D00145E58 /* TickerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE43102021099D00145E58 /* TickerListViewController.swift */; };
+		41DE431520210AE500145E58 /* TickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE431420210AE500145E58 /* TickerCell.swift */; };
+		41DE432220210CE900145E58 /* UICollectionView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE431B20210CE900145E58 /* UICollectionView-Extensions.swift */; };
+		41DE432320210CE900145E58 /* ValueCellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE431C20210CE900145E58 /* ValueCellDataSource.swift */; };
+		41DE432520210CE900145E58 /* ValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE431E20210CE900145E58 /* ValueCell.swift */; };
+		41DE432620210CE900145E58 /* UITableView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE431F20210CE900145E58 /* UITableView-Extensions.swift */; };
+		41DE432820210E2700145E58 /* UIView-Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE432720210E2700145E58 /* UIView-Extensions.swift */; };
+		41DE432B20210EE900145E58 /* TickerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE432A20210EE900145E58 /* TickerListViewModel.swift */; };
+		41DE432E2021102800145E58 /* TickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE432D2021102800145E58 /* TickerDataSource.swift */; };
+		41DE433020211D9600145E58 /* TickerCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DE432F20211D9600145E58 /* TickerCellModel.swift */; };
 		6F5C466F74C7185A15C6D84A /* Pods_CryptoTrackerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC32675290A1F0302FFA7767 /* Pods_CryptoTrackerUITests.framework */; };
 		91539507C10A6C78FA0EF23A /* Pods_CryptoTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56B7E28C99BD038764F84C52 /* Pods_CryptoTracker.framework */; };
 /* End PBXBuildFile section */
@@ -58,8 +71,21 @@
 		412BB3F3201BA19900870B24 /* CryptoTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		412BB3F7201BA19900870B24 /* CryptoTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTrackerUITests.swift; sourceTree = "<group>"; };
 		412BB3F9201BA19900870B24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		412BB407201BA64A00870B24 /* CryptoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAPI.swift; sourceTree = "<group>"; };
 		412BB409201BA70000870B24 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		41DE42FF2020B63900145E58 /* CoinMarketCapAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinMarketCapAPI.swift; sourceTree = "<group>"; };
+		41DE43022020B8D200145E58 /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		41DE43042020B90B00145E58 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		41DE43072020B9D100145E58 /* ErrorEnvelope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorEnvelope.swift; sourceTree = "<group>"; };
+		41DE43102021099D00145E58 /* TickerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListViewController.swift; sourceTree = "<group>"; };
+		41DE431420210AE500145E58 /* TickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCell.swift; sourceTree = "<group>"; };
+		41DE431B20210CE900145E58 /* UICollectionView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView-Extensions.swift"; sourceTree = "<group>"; };
+		41DE431C20210CE900145E58 /* ValueCellDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCellDataSource.swift; sourceTree = "<group>"; };
+		41DE431E20210CE900145E58 /* ValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueCell.swift; sourceTree = "<group>"; };
+		41DE431F20210CE900145E58 /* UITableView-Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Extensions.swift"; sourceTree = "<group>"; };
+		41DE432720210E2700145E58 /* UIView-Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-Extensions.swift"; sourceTree = "<group>"; };
+		41DE432A20210EE900145E58 /* TickerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerListViewModel.swift; sourceTree = "<group>"; };
+		41DE432D2021102800145E58 /* TickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDataSource.swift; sourceTree = "<group>"; };
+		41DE432F20211D9600145E58 /* TickerCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerCellModel.swift; sourceTree = "<group>"; };
 		56B7E28C99BD038764F84C52 /* Pods_CryptoTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C882EF38768FBEFEAB3647C /* Pods-CryptoTrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrackerUITests/Pods-CryptoTrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFF67060A37197470173554E /* Pods-CryptoTrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoTrackerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CryptoTrackerUITests/Pods-CryptoTrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,13 +159,15 @@
 		412BB3D3201BA19800870B24 /* CryptoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				41DE431720210CC500145E58 /* Library */,
+				41DE432920210E9700145E58 /* ViewModels */,
+				41DE432C20210FF800145E58 /* DataSource */,
+				41DE431220210AA800145E58 /* Views */,
 				412BB406201BA60000870B24 /* Models */,
-				412BB405201BA5D200870B24 /* WebServices */,
+				412BB405201BA5D200870B24 /* API */,
 				412BB3D4201BA19800870B24 /* AppDelegate.swift */,
 				412BB3D6201BA19800870B24 /* ViewController.swift */,
-				412BB3D8201BA19900870B24 /* Main.storyboard */,
 				412BB3DE201BA19900870B24 /* Assets.xcassets */,
-				412BB3E0201BA19900870B24 /* LaunchScreen.storyboard */,
 				412BB3E3201BA19900870B24 /* Info.plist */,
 				412BB3DB201BA19900870B24 /* CryptoTracker.xcdatamodeld */,
 			);
@@ -164,20 +192,135 @@
 			path = CryptoTrackerUITests;
 			sourceTree = "<group>";
 		};
-		412BB405201BA5D200870B24 /* WebServices */ = {
+		412BB405201BA5D200870B24 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				412BB407201BA64A00870B24 /* CryptoAPI.swift */,
+				41DE43092020BF5F00145E58 /* Extensions */,
+				41DE43062020B99300145E58 /* Models */,
+				41DE43012020B89800145E58 /* Route */,
+				41DE42F32020B52B00145E58 /* CoinMarketCapAPI */,
 			);
-			path = WebServices;
+			path = API;
 			sourceTree = "<group>";
 		};
 		412BB406201BA60000870B24 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				412BB409201BA70000870B24 /* Ticker.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		41DE42F32020B52B00145E58 /* CoinMarketCapAPI */ = {
+			isa = PBXGroup;
+			children = (
+				41DE42FF2020B63900145E58 /* CoinMarketCapAPI.swift */,
+			);
+			path = CoinMarketCapAPI;
+			sourceTree = "<group>";
+		};
+		41DE43012020B89800145E58 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				41DE43022020B8D200145E58 /* Route.swift */,
+				41DE43042020B90B00145E58 /* Method.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		41DE43062020B99300145E58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				412BB409201BA70000870B24 /* Ticker.swift */,
+				41DE43072020B9D100145E58 /* ErrorEnvelope.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41DE43092020BF5F00145E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		41DE430E202108A700145E58 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				41DE430F2021097000145E58 /* TickerList */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		41DE430F2021097000145E58 /* TickerList */ = {
+			isa = PBXGroup;
+			children = (
+				41DE43102021099D00145E58 /* TickerListViewController.swift */,
+			);
+			path = TickerList;
+			sourceTree = "<group>";
+		};
+		41DE431220210AA800145E58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41DE431620210B0200145E58 /* Storyboards */,
+				41DE431320210ABD00145E58 /* Cells */,
+				41DE430E202108A700145E58 /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41DE431320210ABD00145E58 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				41DE431420210AE500145E58 /* TickerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		41DE431620210B0200145E58 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				412BB3D8201BA19900870B24 /* Main.storyboard */,
+				412BB3E0201BA19900870B24 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		41DE431720210CC500145E58 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				41DE431820210CE900145E58 /* DataSource */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		41DE431820210CE900145E58 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				41DE431B20210CE900145E58 /* UICollectionView-Extensions.swift */,
+				41DE431C20210CE900145E58 /* ValueCellDataSource.swift */,
+				41DE431E20210CE900145E58 /* ValueCell.swift */,
+				41DE431F20210CE900145E58 /* UITableView-Extensions.swift */,
+				41DE432720210E2700145E58 /* UIView-Extensions.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		41DE432920210E9700145E58 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				41DE432A20210EE900145E58 /* TickerListViewModel.swift */,
+				41DE432F20211D9600145E58 /* TickerCellModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		41DE432C20210FF800145E58 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				41DE432D2021102800145E58 /* TickerDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		A7C7DD66C1996C649125F461 /* Frameworks */ = {
@@ -384,12 +527,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CryptoTracker/Pods-CryptoTracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -487,11 +632,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DE432320210CE900145E58 /* ValueCellDataSource.swift in Sources */,
 				412BB3D7201BA19800870B24 /* ViewController.swift in Sources */,
-				412BB408201BA64A00870B24 /* CryptoAPI.swift in Sources */,
 				412BB40A201BA70000870B24 /* Ticker.swift in Sources */,
+				41DE43112021099D00145E58 /* TickerListViewController.swift in Sources */,
 				412BB3DD201BA19900870B24 /* CryptoTracker.xcdatamodeld in Sources */,
+				41DE43032020B8D200145E58 /* Route.swift in Sources */,
+				41DE432520210CE900145E58 /* ValueCell.swift in Sources */,
+				41DE432E2021102800145E58 /* TickerDataSource.swift in Sources */,
+				41DE43002020B63900145E58 /* CoinMarketCapAPI.swift in Sources */,
+				41DE433020211D9600145E58 /* TickerCellModel.swift in Sources */,
+				41DE43052020B90B00145E58 /* Method.swift in Sources */,
+				41DE432220210CE900145E58 /* UICollectionView-Extensions.swift in Sources */,
+				41DE43082020B9D100145E58 /* ErrorEnvelope.swift in Sources */,
+				41DE432820210E2700145E58 /* UIView-Extensions.swift in Sources */,
 				412BB3D5201BA19800870B24 /* AppDelegate.swift in Sources */,
+				41DE432620210CE900145E58 /* UITableView-Extensions.swift in Sources */,
+				41DE432B20210EE900145E58 /* TickerListViewModel.swift in Sources */,
+				41DE431520210AE500145E58 /* TickerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
